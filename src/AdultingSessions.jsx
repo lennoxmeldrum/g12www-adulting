@@ -327,6 +327,7 @@ const SESSIONS = [
   {
     id: 'stuff',
     title: 'Keeping Your Stuff Functional',
+    buttonTitle: 'Functional Stuff',
     subtitle: 'Cleaning, Laundry, and Simple Repairs',
     icon: Wrench,
     color: 'bg-teal-600',
@@ -408,15 +409,8 @@ const SessionCard = ({ session, isActive, onClick }) => {
         <h3
           className={`font-bold ${isActive ? 'text-white' : 'text-gray-800'}`}
         >
-          {session.title}
+          {session.buttonTitle || session.title}
         </h3>
-        <p
-          className={`text-xs mt-1 ${
-            isActive ? 'text-white/90' : 'text-gray-500'
-          } truncate max-w-[200px] md:max-w-none`}
-        >
-          {session.subtitle}
-        </p>
       </div>
     </button>
   );
@@ -471,8 +465,15 @@ export default function AdultingSessions() {
                 </h3>
                 <p className="text-indigo-700 text-xs leading-relaxed">
                   Please review these outlines and self-select the session you
-                  feel most comfortable delivering. All resources and slides
-                  will be provided closer to the date.
+                  feel most comfortable delivering. For more details see{' '}
+                  <a
+                    href="https://docs.google.com/document/d/1coHrDVarlxl5IMBl0rPewEz_MVqN0Xrp2iEG6og98w8/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-indigo-900 font-semibold"
+                  >
+                    this document
+                  </a>.
                 </p>
               </div>
             </div>
