@@ -234,7 +234,7 @@ const SESSIONS = [
           time: '10 min',
           title: 'Jobs & Side Hustles',
           content:
-            'Reality-based. Traditional jobs vs Online work vs Side hustles. Self-employment = no safety net. Discuss: "What looks easy online but isn't?"',
+            'Reality-based. Traditional jobs vs Online work vs Side hustles. Self-employment = no safety net. Discuss: "What looks easy online but isn\'t?"',
         },
         {
           time: '10 min',
